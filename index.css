@@ -1,3 +1,9 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
 @keyframes blink {
     from, to {
         color: transparent;
@@ -7,22 +13,10 @@
     }
 }
 
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
 
 .blinker {
     font-weight: bold;
     font-size: 24px;
     color: whitesmoke;
     animation: blink 1s step-end infinite;
-}
-
-.type {
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 0.15em solid black;
-    animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
 }
