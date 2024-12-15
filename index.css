@@ -20,3 +20,7 @@ body {
     color: whitesmoke;
     animation: blink 1s step-end infinite;
 }
+
+p {
+    color: whitesmoke;
+}
