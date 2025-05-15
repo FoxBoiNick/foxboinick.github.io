@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Pesky - Terms</title>
+    <style>
+        /* light/dark mode */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1e1e1e;
+                color: #dcdcdc;
+            }
+
+            a {
+                color: #61dafb;
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: #ffffff;
+                color: #000000;
+            }
+
+            a {
+                color: #007bff;
+            }
+        }
+
+        /* markdown styles */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+                "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content" class="markdown-body"></div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        document.getElementById('content').innerHTML =
+            marked.parse(`
+## Privacy Policy TL;DR
+_Last updated: May 15, 2025_
+
+- **Operator & Contact**: Individual (“me”), email pesky@nick.ad  
+- **Data Collected**:  
+  - Word-pair counts for Markov chain  
+  - Message IDs (for deletion)  
+  - User opt-out flags  
+  - Attachment URLs (for image gen)  
+  - Guild & channel settings  
+- **Purpose**: Generate fun Markov messages; manage deletions, opt-outs, configs, image gen  
+- **Storage**: Self-hosted; no raw chat logs; word-pairs live until 30 days after bot leaves server  
+- **Sharing**: None; no third-party or cross-border transfers  
+- **User Controls**:  
+  - Servers can request full data reset  
+  - Opt-out via command or email  
+- **Compliance**: UK/EU GDPR; anonymized training; no cookies/tracking; 13+ only  
+- **Liability**: Bot is automated—operator not liable for its output  
+- **Updates**: Announced in the official support server  
+      `);
+    </script>
+</body>
+
+</html>
