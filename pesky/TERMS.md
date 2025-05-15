@@ -1,0 +1,47 @@
+# Terms of Service for Pesky Bird
+
+_Last updated: May 15, 2025_
+
+## 1. Acceptance of Terms
+By adding or using the Pesky Bird bot (“Bot”) in your Discord server, you agree to be bound by these Terms of Service (“Terms”). If you do not agree, do not install or use the Bot.
+
+## 2. Eligibility
+You must be at least 13 years old and comply with Discord’s Terms of Service. By using the Bot, you represent that you meet these requirements.
+
+## 3. License Grant
+Subject to your compliance with these Terms, the Bot’s operator (“Controller”) grants you a non-exclusive, non-transferable, revocable license to use the Bot in your Discord server solely for its intended purpose.
+
+## 4. Prohibited Uses
+You agree not to:
+- Reverse engineer, decompile, or disassemble the Bot.  
+- Host, distribute, or sublicense the Bot to any third party.  
+- Use the Bot for unlawful, harmful, or abusive behavior.  
+- Attempt to circumvent any usage limits or access controls.
+
+## 5. Bot Content & Functionality
+- The Bot generates messages via a Markov Chain algorithm trained on publicly visible server chat.  
+- All generated content is automated; the Controller is **not liable** for any statements or outputs.  
+- The Bot provides optional image-generation features based on user-provided URLs.  
+
+## 6. Opt-Out & Data Controls
+- Users may opt out of message-generation data collection via the Bot’s /optout command or by contacting the Controller.  
+- Server owners may request a full reset (deletion of model data for their server) by emailing pesky@nick.ad.
+
+## 7. No Warranty
+THE BOT IS PROVIDED “AS IS” AND “AS AVAILABLE,” WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. THE CONTROLLER DISCLAIMS ALL WARRANTIES, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+## 8. Limitation of Liability
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE CONTROLLER SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF YOUR USE OF THE BOT, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+## 9. Termination
+The Controller reserves the right to suspend or remove the Bot from any server at any time for any reason, without notice. Upon removal from a server, all model data for that guild will be purged 30 days later.
+
+## 10. Modifications to Terms
+The Controller may update these Terms at any time. Material changes will be announced in the official Pesky Bird support server. Continued use after changes constitutes acceptance.
+
+## 11. Governing Law
+These Terms are governed by the laws of the United Kingdom (UK GDPR jurisdiction), without regard to its conflict of law principles.
+
+## 12. Contact Information
+If you have any questions or requests regarding these Terms, please email:  
+**pesky@nick.ad**  
