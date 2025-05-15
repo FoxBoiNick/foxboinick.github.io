@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Pesky - Terms</title>
+    <style>
+        /* light/dark mode */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1e1e1e;
+                color: #dcdcdc;
+            }
+
+            a {
+                color: #61dafb;
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: #ffffff;
+                color: #000000;
+            }
+
+            a {
+                color: #007bff;
+            }
+        }
+
+        /* markdown styles */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+                "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content" class="markdown-body"></div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        document.getElementById('content').innerHTML =
+            marked.parse(`
+# Privacy Policy for Pesky Bird
+
+_Last updated: May 15, 2025_
+
+## 1. Controller & Contact
+**Operator:** Individual (“me”)  
+**Contact e-mail:** pesky@nick.ad  
+
+## 2. Information We Collect
+When you use Pesky Bird in a Discord server, we automatically process the following data:
+- **Markov Chain Training Data:**  
+  - Word-pair tuples (word, next word, appearance count) derived from server chat.  
+  - _No raw messages are stored._
+- **Deletion Tracking:** Message IDs to support message-deletion actions.  
+- **Opt-Out Status:** User IDs plus a Boolean flag for “opted out” users.  
+- **Attachment Links:** URLs of images or files you submit for image-generation commands.  
+- **Server Configuration:** Guild IDs and per-guild/channel config settings.
+
+## 3. Purpose of Processing
+- **Text Generation:** Generate novel, Markov-chain–based messages that mimic prior server content.  
+- **Bot Functionality:**  
+  - Tracking and execution of message-deletion commands  
+  - Managing per-guild/channel settings  
+  - Honoring user “opt-out” requests  
+  - Handling image-generation inputs
+
+## 4. Data Storage & Retention
+- **Storage Location:** Self-hosted servers under the Controller’s management.  
+- **Retention Period:**  
+  - Model word-pairs, Attachments, guild configurations: retained indefinitely while the server remains active; purged 30 days after removal from a server.  
+  - Opt-out flags: retained only as long as needed; deleted promptly when no longer required.  
+- **Anonymization:** Raw words are immediately transformed into word-pair counts; no personally identifiable text is stored.
+
+## 5. Data Sharing & Transfers
+- Pesky Bird does **not** share data with any third parties.  
+- There are **no** cross-border transfers (all data remains on the Controller’s self-hosted infrastructure).
+
+## 6. User Rights & Controls
+- **Server-Level Reset:** Server owners/administrators may request a full dataset reset (purging all model data for that guild).  
+- **Individual Erasure:** Training data is anonymized and not linked to raw messages; individual users cannot request partial erasure.  
+- **How to Request:** Send a request via email (pesky@nick.ad) or DM the Controller in the official support server. A reset will be performed as soon as practical.
+
+## 7. Cookies or Tracking
+- The bot and any associated website or dashboard **do not** use cookies or any other form of tracking.
+
+## 8. Minors
+- Per Discord’s Terms of Service, users under 13 years of age are prohibited. Pesky Bird does not knowingly collect or process data from minors.
+
+## 9. Legal Basis & Compliance
+- Controller targets compliance with **UK GDPR** and **EU GDPR**.  
+- **Lawful Basis:** Legitimate interest in running and improving the bot, balanced with data minimization and user controls.
+
+## 10. Liability Disclaimer
+Pesky Bird’s outputs are generated automatically by a Markov Chain algorithm trained on public chat history.  
+The Controller **accepts no liability** for any statements, jokes, or content produced by the bot.
+
+## 11. Changes to This Policy
+We may update this policy from time to time.  
+Any material changes will be announced in the official Pesky Bird Discord support server.
+      `);
+    </script>
+</body>
+
+</html>
